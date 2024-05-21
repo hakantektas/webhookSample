@@ -19,10 +19,15 @@ pipeline {
                     }
                 }
         stage('Automation'){
+                    steps {
+                        echo 'Hello Automation Script!'
+                    }
+             }
+        stage('Done'){
                             steps {
                                 echo 'Hello Automation Script!'
                             }
-             }
+                     }
     }
 
 }
