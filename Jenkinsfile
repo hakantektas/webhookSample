@@ -8,6 +8,21 @@ pipeline {
                 echo 'Hello World!'
             }
         }
+        stage('Unit Test'){
+                    steps {
+                        echo 'Hello Unit!'
+                    }
+                }
+        stage('Kubernets'){
+                    steps {
+                        echo 'Hello Kubernets!'
+                    }
+                }
+        stage('Automation'){
+                            steps {
+                                echo 'Hello Automation Script!'
+                            }
+                        }
     }
 
 }
